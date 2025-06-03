@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: #0C1A26;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 25px;
+}
+.logo-natura img {
+    width: 120px;
+    height: auto;
+}
+.menu-cabecalho a{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.titulo-principal h1{
+    font-family: 'Exo 2', serif;
+    color: #00AEFF;
+}
+
