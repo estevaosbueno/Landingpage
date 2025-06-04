@@ -1,12 +1,17 @@
-*{
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
     font-family: 'Lato', sans-serif;
 }
 
 header {
     background-color: #0C1A26;
+    height: 100px;
+    width: 100%;
     opacity: 1;
     display: flex;
     justify-content: space-between;
@@ -14,17 +19,65 @@ header {
     padding-left: 20px;
     padding-right: 25px;
 }
+
 .logo-natura img {
-    width: 120px;
+    width: 100px;
     height: auto;
 }
-.menu-cabecalho a{
+
+.menu-cabecalho a {
     color: #FFFFFF;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 25px;
 }
-.titulo-principal h1{
-    font-family: 'Exo 2', serif;
+
+.menu-cabecalho a:hover{
     color: #00AEFF;
 }
 
+.container {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+}
+
+/* --- Lado Esquerdo --- */
+.lado-esquerdo {
+  flex: 1;
+  background-color: #0C1A26;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+.titulo-principal h1{
+    font-family: 'Exo 2', serif;
+    color: #00AEFF;
+    font-size: 60px;
+    line-height: 1.1;
+    max-width: 500px;
+}
+
+.subtitulo p {
+    font-size: 20px;
+    margin-top: 20px;
+    max-width: 500px;
+    line-height: 1.4;
+}
+
+/* --- Lado Direito com Imagem --- */
+.lado-direito {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.lado-direito img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
